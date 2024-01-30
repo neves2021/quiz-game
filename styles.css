@@ -1,0 +1,108 @@
+body {
+  background-image: linear-gradient(to bottom, red, blueviolet);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}
+
+#audio-controls {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+#toggle-audio {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.result-box {
+  font-family: "Audiowide", sans-serif;
+  background-color: beige;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgb(37 30 32 / 45%);
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+h1 {
+  text-align: center;
+}
+
+#button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+#reset-button,
+#btn-start {
+  font-family: "Audiowide", sans-serif;
+  background-color: #ffac33;
+  color: #5d4848;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px 6px rgb(169 155 205 / 45%);
+}
+
+#reset-button:hover,
+#btn-start:hover {
+  background-color: rgb(56 243 203 / 80%);
+}
+
+#timer-display {
+  font-family: "Audiowide", sans-serif;
+  color: #fff;
+  width: 200px;
+  margin: 20px auto 15px auto;
+}
+
+#quiz-box {
+  display: none;
+  font-family: "Trirong", sans-serif;
+  background-color: rgb(79, 214, 194);
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgb(37 30 32 / 45%);
+  transform: scale(0.8);
+  transition: transform 0.5s ease-in-out;
+}
+
+#quiz-box.active {
+  display: block;
+  transform: scale(1);
+}
+
+ul li {
+  list-style-type: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+ul li:hover {
+  background-color: rgba(221, 170, 41, 0.692);
+  cursor: pointer;
+  padding: 2px;
+}
